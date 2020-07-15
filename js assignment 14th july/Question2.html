@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<h2>var let and const</h2>
+<p>var is globally scoped .let and const are block scoped.</p>
+<p id="demo"></p>
+</head>
+<body>
+<script>
+var name="supriya"
+document.getElementById("demo").innerHTML="Myname is"+ name;
+</script>
+<script>
+let i=6;
+
+i=7;
+console.log(i);
+</script>
+<script>
+const fruits=["mango","äpple"]
+console.log(fruits);
+fruits.push("banana");
+console.log(fruits);
+</script>
+</body>
+</html>
