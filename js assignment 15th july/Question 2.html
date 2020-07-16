@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Array and string Methods</h2> 
+<p>Array methods<br>1.The toString() method returns an array as a comma separated string:<br>2.The join() method also joins all array elements into a string<br>3.The pop() method removes the last element from an array.<br>4.The push() method returns the new array length.<br>5.The shift() method removes the first array element and "shifts" all other elements to a lower index.<br>6.The unshift() method adds a new element to an array (at the beginning), and "unshifts" older elements.<br>String methods.<br>1.The indexOf() method returns the index of the first occurrence of a specified text in a string<br>2.The lastIndexOf() method returns the index of the last occurrence of a specified text in a string<br>3.Both indexOf(), and lastIndexOf() return -1 if the text is not found.<br>4.The search() method searches a string for a specified value and returns the position of the match</p>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p id="sai"></p>
+<p id="sai1"></p>
+<p id="sai2"></p>
+<p id="sai3"></p>
+<p id="sai4"></p>
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.toString();
+</script>
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo1").innerHTML = fruits.join(" * ");
+</script>
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo2").innerHTML = fruits.pop();
+</script>
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo3").innerHTML = fruits.push("tomato");
+</script>
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo4").innerHTML = fruits.shift();
+console.log(fruits);
+</script>
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo5").innerHTML =fruits.unshift("Lemon");
+</script>
+<script>
+var str = "Please sai please";
+var pos = str.indexOf("sai");
+document.getElementById("sai").innerHTML = pos;
+</script>
+<script>
+var str = "Please sai please sai";
+var pos = str.lastIndexOf("sai");
+document.getElementById("sai1").innerHTML = pos;
+</script>
+<script>
+var str = "Please sai please";
+var pos = str.indexOf("raj");
+document.getElementById("sai2").innerHTML = pos;
+</script>
+<script>
+var str = "Please sai please sai";
+var pos = str.lastIndexOf("raj");
+document.getElementById("sai3").innerHTML = pos;
+</script>
+<script>
+var str = "Please sai please sai";
+var pos = str.search("sai");
+document.getElementById("sai4").innerHTML = pos;
+</script>
+</body>
+</html>
