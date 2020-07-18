@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<h2>Reward based on employees sales</h2>
+<body>
+<button onclick="myFunction()">Try it</button>
+<script>
+function myFunction() {
+  var n = prompt("Enter your sales", );
+  if (n <= 5000) {
+  	comm = (2/100)*150
+  }
+  else if (n >5000 && n<= 10000) {
+  	comm = (5/100)*150
+  }
+  else if (n >10000 && n<= 20000) {
+  	comm = (7/100)*150
+  }
+  else if (n > 20000) {
+  	comm = (10/100)*150
+  }
+  else {
+  	comm = "no rewards";
+  }
+  console.log("Your commision is " + comm);
+}
+</script>
+</body>
+</html>

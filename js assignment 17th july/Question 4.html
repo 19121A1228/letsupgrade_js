@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<h1>Calculator</h1>
+<body>
+<input id="myInput" type="text">
+<input id="myInput1" type="text">
+<button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var n = prompt("Enter which is required", );
+  var c = document.getElementById("myInput").value;
+  var d = document.getElementById("myInput1").value;
+  var a = parseInt(c);
+  var b = parseInt(d);
+
+  switch(n) {
+    case "Addition":
+      text = a+b;
+    break;
+    case "Subtraction":
+    text = a-b;
+    break;
+    case "Multiplication":
+    text = a*b;
+    break;
+    case "Division":
+    text = a/b;
+    break;
+    case "Percentage":
+    text = a%b;
+    break;
+    case "Squareroot":
+    text = Math.sqrt(a);
+    break;
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html>
+
+            
+</script>
+</body>
+</html>
