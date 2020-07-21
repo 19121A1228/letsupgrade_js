@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<h2>User details</h2>
+<body>
+<p id="demo"></p>
+<script>
+class user {
+   constructor(name,age,email) {
+   	this.personname = name;
+   	this.personage =age;
+   	this.personemail =email;
+   }
+}
+userdetails =new user("supriya",20,"dhulipati@gmail.com");
+
+class MOderator {
+   constructor(coins,removecoins) {
+   	this.personcoins =coins;
+   	this.personremovecoins =removecoins;
+   }
+}
+MOderatordetails = new MOderator(10,5);
+class Admin {
+   constructor(cource,delcourse) {
+   	this.personcource = cource;
+   	this.persondelcourse =delcourse;
+   }
+}
+Admindetails = new Admin("python","java");
+console.log(userdetails.personname);
+console.log(userdetails.personage);
+console.log(userdetails.personemail);
+console.log(MOderatordetails.personcoins);
+console.log(MOderatordetails.personremovecoins);
+console.log(Admindetails.personcource);
+console.log(Admindetails.persondelcourse);
+</script>
+</body>
+</html>
